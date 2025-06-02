@@ -1,0 +1,107 @@
+<!-- suggestion.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIFinder-Suggestions</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      color: #007BFF;
+      padding: 20px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin-bottom: 600px ;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .go-back {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .go-back a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .go-back a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Suggestions</h1>
+  </header>
+
+  <div class="container">
+    <form
+      id="suggestionForm"
+      action="https://formspree.io/f/mwkgqpgk"
+      method="POST"
+    >
+      <label for="suggestion">Your Suggestion:</label>
+      <textarea id="suggestion" name="suggestion" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+      <div class="go-back">
+        <a href="index.html">Go Back</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

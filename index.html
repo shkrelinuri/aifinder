@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AI Finder</h1>
+    <div id="search-bar">
+      <input type="text" id="searchInput" placeholder="Search by name or keyword" oninput="searchItems()">
+    </div>
+  </header>
+
+  <div id="items-container" class="container"></div>
+
+  <button id="scrollTopButton" onclick="scrollToTop()">▲</button>
+
+  <script>
+
+    function scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+  
+    window.onscroll = function() { scrollFunction() };
+  
+    function scrollFunction() {
+      var button = document.getElementById("scrollTopButton");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    }
+  </script>
+
+  <footer>
+    <p>Something missing? <a href="suggestions.html">Click here to add your suggestion.</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
