@@ -328,7 +328,7 @@ const items = [
       url: "https://eightify.app/ ",
       description:"It's an AI YouTube tool which finds the key points in topics like AI, Business, Finance, News, or Health. Eightify boosts your learning."
     },
-    // Add more AI websites as needed
+    // Add new directory entries here.
   ];
 
   function displayItems(filteredItems) {
